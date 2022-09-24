@@ -1,16 +1,19 @@
 .section-hero {
   background-color: $color-black--dark-1;
-  padding: 4.8rem 0 9.6rem 0;
+  padding: 9.6rem 0 9.6rem 0;
 }
 
 .hero {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  grid-gap: 6.4rem;
+  padding: 0 3.2rem;
 
   &__box {
     align-self: center;
-
+    backface-visibility: hidden;
     &--discription {
+      animation: moveInLeft 1s ease-in;
       font-size: 2.8rem;
       color: $color-white-dark;
     }
@@ -19,16 +22,55 @@
   &__image {
     background-image: linear-gradient(
       to left bottom,
-      rgba(218, 65, 65, 7),
-      #da4141
+      rgba(201, 42, 42, 0.588),
+      #c92a2ae0
     );
     -webkit-clip-path: ellipse(42% 49% at 45% 50%);
     clip-path: ellipse(42% 49% at 45% 50%);
 
     padding: 4.8rem 4.8rem 0 4.8rem;
     &--me {
+      animation: moveInRight 1s ease-in;
       object-fit: cover;
       width: 90%;
     }
+  }
+}
+
+.heading--animation {
+  animation: moveInLeft 1s ease-in;
+}
+
+.btn--outline {
+  animation: moveInLeft 1s ease-in;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    opacity: 0.5;
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    opacity: 0.5;
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
