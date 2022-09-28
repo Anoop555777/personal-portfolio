@@ -17,7 +17,56 @@ body {
 
 .container {
   max-width: 120rem;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0 3.2rem; }
+
+.section-about {
+  padding: 9.6rem 0 9.6rem 0; }
+
+.about {
+  text-align: center; }
+  .about__myself {
+    margin-top: 4.8rem;
+    font-size: 2.4rem;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700; }
+
+.heading-background {
+  background-image: linear-gradient(to right bottom, #1e293b, #da4141);
+  display: inline-block;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  border-image: linear-gradient(to right bottom, #1e293b, #da4141) 30;
+  border-width: 0 0 10px;
+  border-top: none;
+  border-style: solid; }
+
+.about__me {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  grid-gap: 3.2rem;
+  align-items: start; }
+  .about__me--details {
+    box-shadow: 0 0.4rem 0.5rem rgba(0, 0, 0, 0.3);
+    border-radius: 11px;
+    padding: 2.4rem;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    align-content: center;
+    grid-gap: 1.2rem;
+    justify-items: center;
+    transition: all 0.5s; }
+  .about__me--details:hover {
+    transform: translateY(-2rem); }
+  .about__me--icon {
+    height: 4.8rem;
+    width: 4.8rem;
+    fill: #da4141; }
+  .about__me--text {
+    grid-column: 1/-1; }
+  .about__me--heading {
+    align-self: center; }
 
 .header {
   background-color: #1e293b;
@@ -76,6 +125,9 @@ body {
   background-color: #1e293b;
   padding: 9.6rem 0 9.6rem 0; }
 
+.heading--hero {
+  color: #f1f3f5; }
+
 .hero {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
@@ -129,7 +181,6 @@ body {
 .heading-primary {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
-  color: #f1f3f5;
   text-transform: uppercase;
   font-size: 5.2rem;
   line-height: 1.3; }
@@ -155,6 +206,13 @@ body {
   color: #f1f3f5;
   background-color: #c92a2a; }
 
+.heading-tertiary {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  line-height: 1.3; }
+
 .btn--outline:hover,
 .btn--outline:active {
   background-color: #0f172a;
@@ -164,7 +222,12 @@ body {
   margin-bottom: 2.4rem !important; }
 
 .margin__bottom-lg {
-  margin-bottom: 3.2rem !important; }
+  margin-bottom: 6.4rem !important; }
 
 .margin__bottom-md {
   margin-bottom: 4.8rem !important; }
+
+.text {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700; }

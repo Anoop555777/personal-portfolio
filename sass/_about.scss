@@ -1,0 +1,63 @@
+.section-about {
+  padding: 9.6rem 0 9.6rem 0;
+}
+
+.about {
+  text-align: center;
+
+  &__myself {
+    margin-top: 4.8rem;
+    font-size: 2.4rem;
+    font-family: $font-primary;
+    font-weight: 700;
+  }
+}
+.heading-background {
+  background-image: linear-gradient(to right bottom, #1e293b, #da4141);
+  display: inline-block;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  border-image: linear-gradient(to right bottom, #1e293b, #da4141) 30;
+  border-width: 0 0 10px;
+  border-top: none;
+  border-style: solid;
+}
+
+.about__me {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  grid-gap: 3.2rem;
+
+  align-items: start;
+
+  &--details {
+    box-shadow: 0 0.4rem 0.5rem rgba(0, 0, 0, 0.3);
+    border-radius: 11px;
+    padding: 2.4rem;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    align-content: center;
+    grid-gap: 1.2rem;
+    justify-items: center;
+    transition: all 0.5s;
+  }
+
+  &--details:hover {
+    transform: translateY(-2rem);
+  }
+
+  &--icon {
+    height: 4.8rem;
+    width: 4.8rem;
+    fill: $color-light-1;
+  }
+
+  &--text {
+    grid-column: 1/-1;
+  }
+
+  &--heading {
+    align-self: center;
+  }
+}
