@@ -10,18 +10,9 @@
     font-size: 2.4rem;
     font-family: $font-primary;
     font-weight: 700;
+    line-height: 1.7;
+    letter-spacing: 1px;
   }
-}
-.heading-background {
-  background-image: linear-gradient(to right bottom, #1e293b, #da4141);
-  display: inline-block;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  border-image: linear-gradient(to right bottom, #1e293b, #da4141) 30;
-  border-width: 0 0 10px;
-  border-top: none;
-  border-style: solid;
 }
 
 .about__me {
@@ -32,7 +23,7 @@
   align-items: start;
 
   &--details {
-    box-shadow: 0 0.4rem 0.5rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0.4rem 0.5rem rgba(0, 0, 0, 0.1);
     border-radius: 11px;
     padding: 2.4rem;
     display: grid;

@@ -29,18 +29,9 @@ body {
     margin-top: 4.8rem;
     font-size: 2.4rem;
     font-family: "Nunito", sans-serif;
-    font-weight: 700; }
-
-.heading-background {
-  background-image: linear-gradient(to right bottom, #1e293b, #da4141);
-  display: inline-block;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  border-image: linear-gradient(to right bottom, #1e293b, #da4141) 30;
-  border-width: 0 0 10px;
-  border-top: none;
-  border-style: solid; }
+    font-weight: 700;
+    line-height: 1.7;
+    letter-spacing: 1px; }
 
 .about__me {
   display: grid;
@@ -48,7 +39,7 @@ body {
   grid-gap: 3.2rem;
   align-items: start; }
   .about__me--details {
-    box-shadow: 0 0.4rem 0.5rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0.4rem 0.5rem rgba(0, 0, 0, 0.1);
     border-radius: 11px;
     padding: 2.4rem;
     display: grid;
@@ -231,3 +222,26 @@ body {
   font-family: "Nunito", sans-serif;
   font-size: 1.6rem;
   font-weight: 700; }
+
+.heading-background {
+  display: inline-block;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  border-image: linear-gradient(to right bottom, #1e293b, #da4141) 30;
+  border-width: 0 0 10px;
+  border-top: none;
+  border-style: solid; }
+
+.heading-background--1 {
+  background-image: linear-gradient(to right bottom, #1e293b, #da4141); }
+
+.heading-background--2 {
+  background-image: linear-gradient(to right bottom, #fff, #da4141); }
+
+.skill {
+  background-color: #1e293b;
+  padding: 9.6rem 0; }
+
+.skills {
+  text-align: center; }

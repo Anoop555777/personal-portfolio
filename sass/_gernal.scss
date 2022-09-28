@@ -63,3 +63,21 @@
   font-size: 1.6rem;
   font-weight: 700;
 }
+
+.heading-background {
+  display: inline-block;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  border-image: linear-gradient(to right bottom, #1e293b, #da4141) 30;
+  border-width: 0 0 10px;
+  border-top: none;
+  border-style: solid;
+}
+
+.heading-background--1 {
+  background-image: linear-gradient(to right bottom, #1e293b, #da4141);
+}
+.heading-background--2 {
+  background-image: linear-gradient(to right bottom, #fff, #da4141);
+}
