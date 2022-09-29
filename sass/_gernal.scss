@@ -34,7 +34,7 @@
 .heading-tertiary {
   font-family: $font-display;
   font-weight: 700;
-
+  color: currentColor;
   text-transform: uppercase;
   font-size: 2.4rem;
   line-height: 1.3;
@@ -47,15 +47,15 @@
 }
 
 .margin__bottom-sm {
-  margin-bottom: 2.4rem !important;
+  margin-bottom: 3.2rem !important;
 }
 
 .margin__bottom-lg {
-  margin-bottom: 6.4rem !important;
+  margin-bottom: 9.6rem !important;
 }
 
 .margin__bottom-md {
-  margin-bottom: 4.8rem !important;
+  margin-bottom: 5.2rem !important;
 }
 
 .text {

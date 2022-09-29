@@ -24,9 +24,10 @@ body {
   padding: 9.6rem 0 9.6rem 0; }
 
 .about {
-  text-align: center; }
+  text-align: center;
+  color: #1e293b; }
   .about__myself {
-    margin-top: 4.8rem;
+    margin-top: 9.6rem;
     font-size: 2.4rem;
     font-family: "Nunito", sans-serif;
     font-weight: 700;
@@ -200,6 +201,7 @@ body {
 .heading-tertiary {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
+  color: currentColor;
   text-transform: uppercase;
   font-size: 2.4rem;
   line-height: 1.3; }
@@ -210,13 +212,13 @@ body {
   box-shadow: inset 0 0 0 3px #c92a2a; }
 
 .margin__bottom-sm {
-  margin-bottom: 2.4rem !important; }
+  margin-bottom: 3.2rem !important; }
 
 .margin__bottom-lg {
-  margin-bottom: 6.4rem !important; }
+  margin-bottom: 9.6rem !important; }
 
 .margin__bottom-md {
-  margin-bottom: 4.8rem !important; }
+  margin-bottom: 5.2rem !important; }
 
 .text {
   font-family: "Nunito", sans-serif;
@@ -245,3 +247,24 @@ body {
 
 .skills {
   text-align: center; }
+
+.skills--container {
+  max-width: 100rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem; }
+
+.skill-grid {
+  color: #f1f3f5;
+  display: grid;
+  grid-template-columns: min-content min-content;
+  justify-content: space-between; }
+
+.fill {
+  background-color: #da4141;
+  grid-column: 1/-1;
+  grid-row: 1/2; }
+
+.skill--1 {
+  background-image: linear-gradient(100deg, #da4141 0%, #da4141 95%, #f1f3f5 95%); }

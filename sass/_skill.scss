@@ -6,3 +6,34 @@
 .skills {
   text-align: center;
 }
+
+.skills--container {
+  max-width: 100rem;
+
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+}
+
+.skill-grid {
+  color: $color-white-dark;
+  display: grid;
+  grid-template-columns: min-content min-content;
+  justify-content: space-between;
+}
+
+.fill {
+  background-color: $color-light-1;
+  grid-column: 1/-1;
+  grid-row: 1/2;
+}
+
+.skill--1 {
+  background-image: linear-gradient(
+    100deg,
+    $color-light-1 0%,
+    $color-light-1 95%,
+    $color-white-dark 95%
+  );
+}
