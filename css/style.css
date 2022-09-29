@@ -261,10 +261,42 @@ body {
   grid-template-columns: min-content min-content;
   justify-content: space-between; }
 
+.skill-grid .score {
+  color: #1e293b; }
+
 .fill {
   background-color: #da4141;
   grid-column: 1/-1;
   grid-row: 1/2; }
 
 .skill--1 {
-  background-image: linear-gradient(100deg, #da4141 0%, #da4141 95%, #f1f3f5 95%); }
+  padding: 1.2rem;
+  background-image: linear-gradient(100deg, #da4141 0%, #da4141 92%, #f1f3f5 92%); }
+
+.skill--2 {
+  padding: 1.2rem;
+  background-image: linear-gradient(100deg, #da4141 0%, #da4141 92%, #f1f3f5 92%); }
+
+.skill--3 {
+  padding: 1.2rem;
+  background-image: linear-gradient(100deg, #da4141 0%, #da4141 92%, #f1f3f5 92%); }
+
+.skill--4 {
+  padding: 1.2rem;
+  background-image: linear-gradient(100deg, #da4141 0%, #da4141 80%, #f1f3f5 80%); }
+
+.skill--5 {
+  padding: 1.2rem;
+  background-image: linear-gradient(100deg, #da4141 0%, #da4141 70%, #f1f3f5 70%); }
+
+.skill--7 {
+  padding: 1.2rem;
+  background-image: linear-gradient(100deg, #da4141 0%, #da4141 60%, #f1f3f5 60%); }
+
+.skill--6 {
+  padding: 1.2rem;
+  background-image: linear-gradient(100deg, #da4141 0%, #da4141 70%, #f1f3f5 70%); }
+
+.skill--8 {
+  padding: 1.2rem;
+  background-image: linear-gradient(100deg, #da4141 0%, #da4141 60%, #f1f3f5 60%); }

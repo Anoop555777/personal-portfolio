@@ -23,6 +23,10 @@
   justify-content: space-between;
 }
 
+.skill-grid .score {
+  color: $color-black--dark-1;
+}
+
 .fill {
   background-color: $color-light-1;
   grid-column: 1/-1;
@@ -30,10 +34,81 @@
 }
 
 .skill--1 {
+  padding: 1.2rem;
   background-image: linear-gradient(
     100deg,
     $color-light-1 0%,
-    $color-light-1 95%,
-    $color-white-dark 95%
+    $color-light-1 92%,
+    $color-white-dark 92%
+  );
+}
+
+.skill--2 {
+  padding: 1.2rem;
+  background-image: linear-gradient(
+    100deg,
+    $color-light-1 0%,
+    $color-light-1 92%,
+    $color-white-dark 92%
+  );
+}
+
+.skill--3 {
+  padding: 1.2rem;
+  background-image: linear-gradient(
+    100deg,
+    $color-light-1 0%,
+    $color-light-1 92%,
+    $color-white-dark 92%
+  );
+}
+
+.skill--4 {
+  padding: 1.2rem;
+  background-image: linear-gradient(
+    100deg,
+    $color-light-1 0%,
+    $color-light-1 80%,
+    $color-white-dark 80%
+  );
+}
+
+.skill--5 {
+  padding: 1.2rem;
+  background-image: linear-gradient(
+    100deg,
+    $color-light-1 0%,
+    $color-light-1 70%,
+    $color-white-dark 70%
+  );
+}
+
+.skill--7 {
+  padding: 1.2rem;
+  background-image: linear-gradient(
+    100deg,
+    $color-light-1 0%,
+    $color-light-1 60%,
+    $color-white-dark 60%
+  );
+}
+
+.skill--6 {
+  padding: 1.2rem;
+  background-image: linear-gradient(
+    100deg,
+    $color-light-1 0%,
+    $color-light-1 70%,
+    $color-white-dark 70%
+  );
+}
+
+.skill--8 {
+  padding: 1.2rem;
+  background-image: linear-gradient(
+    100deg,
+    $color-light-1 0%,
+    $color-light-1 60%,
+    $color-white-dark 60%
   );
 }
