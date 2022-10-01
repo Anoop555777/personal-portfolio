@@ -10,7 +10,6 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   grid-gap: 6.4rem;
-  padding: 0 3.2rem;
 
   &__box {
     align-self: center;
