@@ -188,7 +188,7 @@
                 <h3 class="heading-tertiary">Dashboard</h3>
                 <p class="text margin__bottom-sm">ReactJS</p>
 
-                <a href="" class="btn__project btn--white">View</a>
+                <a href="" class="btn__animation btn--white">View</a>
               </div>
             </div>
 
@@ -203,7 +203,7 @@
               <div class="card__side card__side--back">
                 <h3 class="heading-tertiary">Tour Booking</h3>
                 <p class="text margin__bottom-sm">NodeJS / pug</p>
-                <a href="" class="btn__project btn--white">View</a>
+                <a href="" class="btn__animation btn--white">View</a>
               </div>
             </div>
 
@@ -218,7 +218,7 @@
               <div class="card__side card__side--back">
                 <h3 class="heading-tertiary">Food API</h3>
                 <p class="text margin__bottom-sm">JavaScript / HTML5 / CSS</p>
-                <a href="" class="btn__project btn--white">View</a>
+                <a href="" class="btn__animation btn--white">View</a>
               </div>
             </div>
 
@@ -233,7 +233,7 @@
               <div class="card__side card__side--back">
                 <h3 class="heading-tertiary">NEXTER</h3>
                 <p class="text margin__bottom-sm">HTML5 / SCSS</p>
-                <a href="" class="btn__project btn--white">View</a>
+                <a href="" class="btn__animation btn--white">View</a>
               </div>
             </div>
 
@@ -248,7 +248,7 @@
               <div class="card__side card__side--back">
                 <h3 class="heading-tertiary">Food Subscription</h3>
                 <p class="text margin__bottom-sm">HTML5/ CSS/ JS</p>
-                <a href="" class="btn__project btn--white">View</a>
+                <a href="" class="btn__animation btn--white">View</a>
               </div>
             </div>
 
@@ -263,7 +263,7 @@
               <div class="card__side card__side--back">
                 <h3 class="heading-tertiary">Tour</h3>
                 <p class="text margin__bottom-sm">HTML5 / SCSS</p>
-                <a href="" class="btn__project btn--white">View</a>
+                <a href="" class="btn__animation btn--white">View</a>
               </div>
             </div>
           </div>
@@ -278,20 +278,42 @@
             contact
           </h1>
 
-          <div class="contact__detail">
-            <input
-              type="text"
-              id="contact__Name"
-              class="contact__detail__input"
-              placeholder="Name"
-            />
-            <input
-              type="email"
-              id="contact__Email"
-              class="contact__detail__input"
-              placeholder="Email"
-            />
-          </div>
+          <form class="contact__detail">
+            <div class="form__group">
+              <input
+                type="text"
+                class="form__input"
+                placeholder="Full Name"
+                id="name"
+                required
+              />
+              <label for="name" class="form__label">Full name</label>
+            </div>
+
+            <div class="form__group">
+              <input
+                type="email"
+                class="form__input"
+                placeholder="Email address"
+                id="email"
+                required
+              />
+              <label for="email" class="form__label">Email</label>
+            </div>
+
+            <div class="form__group">
+              <textarea
+                type="email"
+                class="form__input"
+                placeholder="message"
+                id="message"
+              ></textarea>
+            </div>
+
+            <div class="form__group">
+              <button class="btn__animation">submit</button>
+            </div>
+          </form>
         </div>
       </section>
     </main>
