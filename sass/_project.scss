@@ -61,3 +61,8 @@
     transform: rotateY(0deg);
   }
 }
+
+.btn--white {
+  color: $color-black--dark-1;
+  background-color: $color-white-dark;
+}

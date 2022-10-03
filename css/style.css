@@ -92,7 +92,7 @@ body {
   background-image: linear-gradient(to right bottom, #fff, #da4141); }
 
 .btn__animation {
-  display: inline-block;
+  display: block;
   padding: 0.6rem 2.4rem;
   font-family: "Nunito", sans-serif;
   font-size: 1.6rem;
@@ -102,7 +102,8 @@ body {
   text-decoration: none;
   border-radius: 100px;
   position: relative;
-  cursor: pointer; }
+  cursor: pointer;
+  border: none; }
 
 .btn__animation::after {
   content: "";
@@ -270,6 +271,59 @@ body {
     opacity: 1;
     transform: translateX(0); } }
 
+.footer {
+  background-color: #0f172a;
+  padding: 6.4rem 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2.4rem; }
+  .footer__grid {
+    display: flex;
+    gap: 2rem; }
+  .footer__icons {
+    padding: 2rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.9);
+    position: relative; }
+  .footer--icon {
+    height: 2.4rem;
+    width: 2.4rem;
+    fill: #f1f3f5;
+    position: relative;
+    z-index: 10; }
+  .footer__icons::before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 3px;
+    background-color: #ba265d;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleY(0);
+    transition: transform 0.2s, width 0.2s cubic-bezier(1, 0, 0, 1) 0.4s; }
+  .footer__text {
+    color: #f1f3f5;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.6rem; }
+    .footer__text span {
+      color: #da4141; }
+
+.footer__icons:hover::before {
+  transform: scaleY(1);
+  width: 100%; }
+
+.footer__icon {
+  padding: 2rem;
+  background-color: #da4141;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.9);
+  position: absolute;
+  top: 0;
+  left: 48%;
+  transform: translate(0, -50%); }
+
 .skill {
   background-color: #1e293b;
   padding: 9.6rem 0; }
@@ -371,6 +425,10 @@ body {
   .card:hover .card__side--back {
     transform: rotateY(0deg); }
 
+.btn--white {
+  color: #1e293b;
+  background-color: #f1f3f5; }
+
 .contact {
   padding: 9.6rem 0;
   background-color: #1e293b; }
@@ -383,9 +441,12 @@ body {
 .contact__detail {
   padding: 4.8rem 9.6rem;
   width: 80%;
+  background-color: #1e293b;
   display: flex;
   flex-direction: column;
-  gap: 3.8rem; }
+  gap: 3.8rem;
+  justify-content: center;
+  z-index: 10; }
 
 .form__group {
   position: relative; }
@@ -419,23 +480,20 @@ body {
   font-weight: 700;
   position: absolute;
   left: 2rem;
-  bottom: 0;
+  bottom: -3rem;
   display: block;
   color: #da4141;
   transition: all 0.5s; }
 
 .form__input:placeholder-shown + .form__label {
   opacity: 0;
-  visibility: hidden; }
-
-.form__input:focus + .form__label {
-  transform: translateY(3rem);
-  opacity: 1;
-  visibility: visible; }
-
-.form__input:not(:focus) + .form__label {
-  opacity: 0;
-  visibility: hidden; }
+  visibility: hidden;
+  transform: translateY(-4rem); }
 
 .btn__form {
-  width: 30%; }
+  width: 30%;
+  color: #1e293b;
+  background-color: #da4141; }
+
+.btn__form::after {
+  background-color: #da4141; }

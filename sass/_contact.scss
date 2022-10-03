@@ -11,10 +11,12 @@
 .contact__detail {
   padding: 4.8rem 9.6rem;
   width: 80%;
-
+  background-color: $color-black--dark-1;
   display: flex;
   flex-direction: column;
   gap: 3.8rem;
+  justify-content: center;
+  z-index: 10;
 }
 
 .form {
@@ -55,7 +57,7 @@
     font-weight: 700;
     position: absolute;
     left: 2rem;
-    bottom: 0;
+    bottom: -3rem;
     display: block;
     color: $color-light-1;
 
@@ -65,20 +67,16 @@
   &__input:placeholder-shown + &__label {
     opacity: 0;
     visibility: hidden;
-  }
-
-  &__input:focus + &__label {
-    transform: translateY(3rem);
-    opacity: 1;
-    visibility: visible;
-  }
-
-  &__input:not(:focus) + &__label {
-    opacity: 0;
-    visibility: hidden;
+    transform: translateY(-4rem);
   }
 }
 
 .btn__form {
   width: 30%;
+  color: $color-black--dark-1;
+  background-color: $color-light-1;
+}
+
+.btn__form::after {
+  background-color: $color-light-1;
 }

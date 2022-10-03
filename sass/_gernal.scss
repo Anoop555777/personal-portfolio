@@ -83,7 +83,7 @@
 }
 
 .btn__animation {
-  display: inline-block;
+  display: block;
   padding: 0.6rem 2.4rem;
 
   font-family: $font-primary;
@@ -95,6 +95,7 @@
   border-radius: 100px;
   position: relative;
   cursor: pointer;
+  border: none;
 }
 
 .btn__animation::after {
@@ -113,5 +114,6 @@
 
 .btn__animation:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
+
   opacity: 0;
 }
