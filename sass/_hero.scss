@@ -22,6 +22,7 @@
   }
 
   &__image {
+    backface-visibility: hidden;
     background-image: linear-gradient(
       to left bottom,
       rgba(201, 42, 42, 0.588),

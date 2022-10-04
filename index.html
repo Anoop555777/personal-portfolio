@@ -13,19 +13,20 @@
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 
     <title>Personal Portifio &mdash; about myself</title>
+    <script defer src="./script.js"></script>
   </head>
   <body>
     <header class="header">
-      <a href="#">
-        <img src="img/logo1.png" alt="logo" class="logo" />
-      </a>
+      <a href="#" class="header__icon">
+        <h4 class="heading-tertiary heading__logo">Portfolio</h4></a
+      >
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li><a class="main-nav-link" href="#">Home</a></li>
-          <li><a class="main-nav-link" href="#">About</a></li>
-          <li><a class="main-nav-link" href="#">Skills</a></li>
-          <li><a class="main-nav-link" href="#">Project</a></li>
-          <li><a class="main-nav-link" href="#">contact</a></li>
+          <li><a class="main-nav-link" href="#section--1">About</a></li>
+          <li><a class="main-nav-link" href="#section--2">Skills</a></li>
+          <li><a class="main-nav-link" href="#section--3">Project</a></li>
+          <li><a class="main-nav-link" href="#section--4">contact</a></li>
         </ul>
       </nav>
     </header>
@@ -52,7 +53,7 @@
         </div>
       </section>
 
-      <section class="section-about">
+      <section class="section-about" id="section--1">
         <div class="container about">
           <h1
             class="heading-primary heading-background heading-background--1 margin__bottom-lg"
@@ -119,7 +120,7 @@
         </div>
       </section>
 
-      <section class="skill">
+      <section class="skill" id="section--2">
         <div class="container skills">
           <h1
             class="heading-primary heading-background heading-background--2 margin__bottom-lg"
@@ -167,7 +168,7 @@
         </div>
       </section>
 
-      <section class="project">
+      <section class="project" id="section--3">
         <div class="container project__container">
           <h1
             class="heading-primary heading-background heading-background--1 margin__bottom-lg"
@@ -270,7 +271,7 @@
         </div>
       </section>
 
-      <section class="contact">
+      <section class="contact" id="section--4">
         <div class="container contact__info">
           <h1
             class="heading-primary heading-background heading-background--2 margin__bottom-lg"

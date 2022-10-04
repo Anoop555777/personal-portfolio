@@ -21,6 +21,9 @@
   display: grid;
   grid-template-columns: min-content min-content;
   justify-content: space-between;
+  padding: 1.2rem;
+  background-size: 0%;
+  transition: all 0.4s;
 }
 
 .skill-grid .score {
@@ -34,7 +37,6 @@
 }
 
 .skill--1 {
-  padding: 1.2rem;
   background-image: linear-gradient(
     100deg,
     $color-light-1 0%,
@@ -44,7 +46,6 @@
 }
 
 .skill--2 {
-  padding: 1.2rem;
   background-image: linear-gradient(
     100deg,
     $color-light-1 0%,
@@ -54,7 +55,6 @@
 }
 
 .skill--3 {
-  padding: 1.2rem;
   background-image: linear-gradient(
     100deg,
     $color-light-1 0%,
@@ -64,7 +64,6 @@
 }
 
 .skill--4 {
-  padding: 1.2rem;
   background-image: linear-gradient(
     100deg,
     $color-light-1 0%,
@@ -74,7 +73,6 @@
 }
 
 .skill--5 {
-  padding: 1.2rem;
   background-image: linear-gradient(
     100deg,
     $color-light-1 0%,
@@ -84,7 +82,6 @@
 }
 
 .skill--7 {
-  padding: 1.2rem;
   background-image: linear-gradient(
     100deg,
     $color-light-1 0%,
@@ -94,7 +91,6 @@
 }
 
 .skill--6 {
-  padding: 1.2rem;
   background-image: linear-gradient(
     100deg,
     $color-light-1 0%,
@@ -104,11 +100,14 @@
 }
 
 .skill--8 {
-  padding: 1.2rem;
   background-image: linear-gradient(
     100deg,
     $color-light-1 0%,
     $color-light-1 60%,
     $color-white-dark 60%
   );
+}
+
+.swap {
+  background-size: 100%;
 }

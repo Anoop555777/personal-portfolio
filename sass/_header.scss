@@ -5,15 +5,14 @@
   align-items: center;
   height: 9.6rem;
   padding: 0 4.8rem;
+  width: 100%;
+  z-index: 100;
 }
 
-.logo {
-  height: 7rem;
-  width: 7rem;
-  object-fit: cover;
-  border-radius: 50%;
+.header__icon {
+  display: inline-block;
+  text-decoration: none;
 }
-
 .main-nav {
   &-list {
     list-style: none;
@@ -59,4 +58,13 @@
 
 .heading-style {
   color: #c92a2a;
+}
+
+.heading__logo {
+  color: #c92a2a;
+}
+
+.header.sticky {
+  position: fixed;
+  background-color: $color-primary--light-2;
 }
