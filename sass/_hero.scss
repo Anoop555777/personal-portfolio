@@ -1,9 +1,27 @@
 .section-hero {
   background-color: $color-black--dark-1;
   padding: 9.6rem 0 9.6rem 0;
-
+  position: relative;
   @media (max-width: 56.25em) {
     padding: 12.8rem 0 9.6rem 0;
+  }
+}
+
+.section__icon {
+  display: none;
+
+  @media (max-width: 56.25em) {
+    display: inline-block;
+  }
+
+  position: absolute;
+  font-size: 4.8rem;
+  top: 5rem;
+  left: 5rem;
+  text-decoration: none;
+
+  h4 {
+    font-size: 3.2rem;
   }
 }
 

@@ -136,9 +136,15 @@ const sectionObserver = new IntersectionObserver(
 );
 
 allSection.forEach((section) => {
-  console.log(section);
-
   section.classList.add("section--hidden");
 
   sectionObserver.observe(section);
+});
+
+const nav = document.querySelector(".navigation__nav");
+const checklist = document.querySelector(".navigation__checkbox");
+nav.addEventListener("click", function (e) {
+  if (e.target.classList.contains("navigation__link")) {
+    checklist.checked = false;
+  }
 });

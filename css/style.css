@@ -345,10 +345,24 @@ body {
 
 .section-hero {
   background-color: #1e293b;
-  padding: 9.6rem 0 9.6rem 0; }
+  padding: 9.6rem 0 9.6rem 0;
+  position: relative; }
   @media (max-width: 56.25em) {
     .section-hero {
       padding: 12.8rem 0 9.6rem 0; } }
+
+.section__icon {
+  display: none;
+  position: absolute;
+  font-size: 4.8rem;
+  top: 5rem;
+  left: 5rem;
+  text-decoration: none; }
+  @media (max-width: 56.25em) {
+    .section__icon {
+      display: inline-block; } }
+  .section__icon h4 {
+    font-size: 3.2rem; }
 
 .container__hero {
   max-width: 140rem; }
