@@ -17,6 +17,13 @@
   gap: 3.8rem;
   justify-content: center;
   z-index: 10;
+
+  @media (max-width: 62em) {
+    width: 100%;
+  }
+  @media (max-width: 54em) {
+    padding: 4.8em 0;
+  }
 }
 
 .form {

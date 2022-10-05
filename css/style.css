@@ -14,6 +14,9 @@ html {
   @media (max-width: 62em) {
     html {
       font-size: 48%; } }
+  @media (max-width: 45em) {
+    html {
+      font-size: 43%; } }
 
 body {
   font-family: "Rubik", sans-serif;
@@ -374,6 +377,9 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   grid-gap: 6.4rem; }
+  @media (max-width: 56.25em) {
+    .hero {
+      margin-top: 9.6rem; } }
   .hero__box {
     align-self: center;
     backface-visibility: hidden; }
@@ -472,6 +478,9 @@ body {
   top: 0;
   left: 48%;
   transform: translate(0, -50%); }
+  @media (max-width: 31.25em) {
+    .footer__icon {
+      left: 45%; } }
 
 .skill {
   background-color: #1e293b;
@@ -594,6 +603,12 @@ body {
   gap: 3.8rem;
   justify-content: center;
   z-index: 10; }
+  @media (max-width: 62em) {
+    .contact__detail {
+      width: 100%; } }
+  @media (max-width: 54em) {
+    .contact__detail {
+      padding: 4.8em 0; } }
 
 .form__group {
   position: relative; }

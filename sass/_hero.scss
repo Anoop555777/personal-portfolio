@@ -38,6 +38,10 @@
   grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   grid-gap: 6.4rem;
 
+  @media (max-width: 56.25em) {
+    margin-top: 9.6rem;
+  }
+
   &__box {
     align-self: center;
     backface-visibility: hidden;
