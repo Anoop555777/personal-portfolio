@@ -5,7 +5,7 @@ $color-dark-1: #ba265d;
 $color-white-dark: #f1f3f5;
 
 //font variable
-$font-primary: "Nunito", sans-serif;
+$font-primary: "Rubik", sans-serif;
 $font-display: "Josefin Sans", sans-serif;
 
 *,
@@ -19,6 +19,14 @@ $font-display: "Josefin Sans", sans-serif;
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+
+  @media (max-width: 72em) {
+    font-size: 54.25%;
+  }
+
+  @media (max-width: 62em) {
+    font-size: 48%;
+  }
 }
 
 body {

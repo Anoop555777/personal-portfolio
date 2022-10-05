@@ -9,6 +9,11 @@
       href="https://fonts.googleapis.com/css?family=Josefin+Sans:300400400i|Nunito:300300i"
       rel="stylesheet"
     />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 
@@ -25,14 +30,47 @@
           <li><a class="main-nav-link" href="#">Home</a></li>
           <li><a class="main-nav-link" href="#section--1">About</a></li>
           <li><a class="main-nav-link" href="#section--2">Skills</a></li>
-          <li><a class="main-nav-link" href="#section--3">Project</a></li>
+          <li><a class="main-nav-link" href="#section--3">Projects</a></li>
           <li><a class="main-nav-link" href="#section--4">contact</a></li>
         </ul>
       </nav>
     </header>
+
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+      <div class="navigation__background">&nbsp;</div>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#section--1" class="navigation__link">
+              <span> 01</span>ABOUT</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#section--2" class="navigation__link"
+              ><span> 02</span>SKILLS</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#section--3" class="navigation__link"
+              ><span> 03</span>PROJECTS</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#section--4" class="navigation__link"
+              ><span> 04</span>CONTRACT</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+
     <main>
       <section class="section-hero">
-        <div class="container hero">
+        <div class="container container__hero hero">
           <div class="hero__box">
             <h1
               class="heading-primary heading--hero heading--animation margin__bottom-md"
@@ -45,7 +83,9 @@
               Front end developer
             </p>
 
-            <a href="#how" class="btn btn--outline">view my work &darr;</a>
+            <a href="#section--1" class="btn btn--outline"
+              >view my work &darr;</a
+            >
           </div>
           <div class="hero__image">
             <img src="./img/photo 2.png" alt="me" class="hero__image--me" />
@@ -53,7 +93,7 @@
         </div>
       </section>
 
-      <section class="section-about" id="section--1">
+      <section class="section section-about" id="section--1">
         <div class="container about">
           <h1
             class="heading-primary heading-background heading-background--1 margin__bottom-lg"
@@ -101,9 +141,9 @@
                 <use xlink:href="img/sprite.svg#icon-light-bulb"></use>
               </svg>
 
-              <h4 class="heading-tertiary about__me--heading">Intuitive</h4>
+              <h4 class="heading-tertiary about__me--heading">UX/UI</h4>
               <p class="text about__me--text">
-                Strong preference for easy to use, intuitive UX/UI.
+                UX/UI is not what it see and feel like,UX is how it is working
               </p>
             </div>
           </div>
@@ -120,7 +160,7 @@
         </div>
       </section>
 
-      <section class="skill" id="section--2">
+      <section class="section skill" id="section--2">
         <div class="container skills">
           <h1
             class="heading-primary heading-background heading-background--2 margin__bottom-lg"
@@ -168,7 +208,7 @@
         </div>
       </section>
 
-      <section class="project" id="section--3">
+      <section class="section project" id="section--3">
         <div class="container project__container">
           <h1
             class="heading-primary heading-background heading-background--1 margin__bottom-lg"
@@ -271,7 +311,7 @@
         </div>
       </section>
 
-      <section class="contact" id="section--4">
+      <section class="section contact" id="section--4">
         <div class="container contact__info">
           <h1
             class="heading-primary heading-background heading-background--2 margin__bottom-lg"

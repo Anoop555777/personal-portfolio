@@ -1,7 +1,16 @@
 .section-hero {
   background-color: $color-black--dark-1;
   padding: 9.6rem 0 9.6rem 0;
+
+  @media (max-width: 56.25em) {
+    padding: 12.8rem 0 9.6rem 0;
+  }
 }
+
+.container__hero {
+  max-width: 140rem;
+}
+
 .heading--hero {
   color: $color-white-dark;
 }

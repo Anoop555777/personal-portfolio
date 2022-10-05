@@ -18,21 +18,25 @@ mainNav.addEventListener("mouseover", handerHover.bind(0.5));
 
 mainNav.addEventListener("mouseout", handerHover.bind(1));
 
-mainNav.addEventListener("click", function (e) {
-  e.preventDefault();
-  if (e.target.classList.contains("main-nav-link")) {
-    const href = e.target.getAttribute("href");
+const allLinks = document.querySelectorAll("a:link");
+
+allLinks.forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    const href = link.getAttribute("href");
+
+    // Scroll back to top
     if (href === "#")
       window.scrollTo({
         top: 0,
         behavior: "smooth",
       });
-    else {
-      document.querySelector(href).scrollIntoView({
-        behavior: "smooth",
-      });
+    // Scroll to other links
+    else if (href !== "#" && href.startsWith("#")) {
+      const sectionEl = document.querySelector(href);
+      sectionEl.scrollIntoView({ behavior: "smooth" });
     }
-  }
+  });
 });
 
 const navSize = getComputedStyle(header).height;
@@ -79,8 +83,8 @@ swapSkill.forEach((skill) => skillsObserver.observe(skill));
 
 const scrollUp = document.querySelector(".footer__icon");
 scrollUp.addEventListener("click", function (e) {
+  e.preventDefault();
   const href = e.target.getAttribute("href");
-  console.log(href);
 
   if (href === "#") {
     window.scrollTo({
@@ -88,4 +92,53 @@ scrollUp.addEventListener("click", function (e) {
       behavior: "smooth",
     });
   }
+});
+
+// const scrolldown = document.querySelector(".btn--outline");
+// scrolldown.addEventListener("click", function (e) {
+//   e.preventDefault();
+//   const href = e.target.getAttribute("href");
+
+//   document.querySelector(href).scrollIntoView({
+//     behavior: "smooth",
+//   });
+// });
+
+// const headerIcon = document.querySelector(".header__icon");
+// headerIcon.addEventListener("click", function (e) {
+//   e.preventDefault();
+
+//   window.scrollTo({
+//     top: 0,
+//     behavior: "smooth",
+//   });
+// });
+
+const allSection = document.querySelectorAll(".section");
+
+const observerSectionCallback = function (entries, observer) {
+  const [entry] = entries;
+
+  if (!entry.isIntersecting) return;
+  entry.target.classList.remove("section--hidden");
+
+  observer.unobserve(entry.target);
+};
+
+const observerSectionOptions = {
+  root: null,
+  threshold: 0.2,
+};
+
+const sectionObserver = new IntersectionObserver(
+  observerSectionCallback,
+  observerSectionOptions
+);
+
+allSection.forEach((section) => {
+  console.log(section);
+
+  section.classList.add("section--hidden");
+
+  sectionObserver.observe(section);
 });

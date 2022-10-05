@@ -8,9 +8,15 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media (max-width: 72em) {
+    html {
+      font-size: 54.25%; } }
+  @media (max-width: 62em) {
+    html {
+      font-size: 48%; } }
 
 body {
-  font-family: "Nunito", sans-serif;
+  font-family: "Rubik", sans-serif;
   color: #1e293b;
   font-weight: 300;
   line-height: 1.6; }
@@ -19,6 +25,13 @@ body {
   max-width: 120rem;
   margin: 0 auto;
   padding: 0 3.2rem; }
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(10rem); }
+
+.section {
+  transition: all 1s; }
 
 .heading-primary {
   font-family: "Josefin Sans", sans-serif;
@@ -49,7 +62,7 @@ body {
   background-color: #c92a2a; }
 
 .heading-tertiary {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 700;
   color: currentColor;
   text-transform: uppercase;
@@ -71,7 +84,7 @@ body {
   margin-bottom: 5.2rem !important; }
 
 .text {
-  font-family: "Nunito", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 1.6rem;
   font-weight: 700; }
 
@@ -94,7 +107,7 @@ body {
 .btn__animation {
   display: block;
   padding: 1.2rem 2.4rem;
-  font-family: "Nunito", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 1.6rem;
   color: #1e293b;
   font-weight: 700;
@@ -131,7 +144,7 @@ body {
   .about__myself {
     margin-top: 9.6rem;
     font-size: 2.4rem;
-    font-family: "Nunito", sans-serif;
+    font-family: "Rubik", sans-serif;
     font-weight: 700;
     line-height: 1.7;
     letter-spacing: 1px; }
@@ -148,7 +161,7 @@ body {
     display: grid;
     grid-template-columns: min-content 1fr;
     align-content: center;
-    grid-gap: 1.2rem;
+    grid-gap: 1.6rem;
     justify-items: center;
     transition: all 0.5s; }
   .about__me--details:hover {
@@ -171,6 +184,9 @@ body {
   padding: 0 4.8rem;
   width: 100%;
   z-index: 100; }
+  @media (max-width: 56.25em) {
+    .header {
+      display: none; } }
 
 .header__icon {
   display: inline-block;
@@ -222,9 +238,120 @@ body {
   position: fixed;
   background-color: #0f172a; }
 
+.navigation {
+  display: none;
+  backface-visibility: hidden; }
+  @media (max-width: 56.25em) {
+    .navigation {
+      display: block; } }
+  .navigation__checkbox {
+    display: none; }
+  .navigation__button {
+    background-color: #f1f3f5;
+    height: 7rem;
+    width: 7rem;
+    position: fixed;
+    top: 4rem;
+    right: 6rem;
+    border-radius: 50%;
+    z-index: 200;
+    box-shadow: 0 1.5rem 3rem rgba(15, 23, 42, 0.1);
+    text-align: center;
+    cursor: pointer; }
+  .navigation__background {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 4.5rem;
+    right: 6.5rem;
+    background-image: radial-gradient(#0f172a, #f1f3f5);
+    z-index: 100;
+    transition: all 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
+  .navigation__nav {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 150;
+    opacity: 0;
+    width: 0;
+    transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+  .navigation__checkbox:checked ~ .navigation__background {
+    transform: scale(80); }
+  .navigation__checkbox:checked ~ .navigation__nav {
+    width: 100%;
+    opacity: 1; }
+  .navigation__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    gap: 30px; }
+  .navigation__item {
+    margin: 1.6rem; }
+  .navigation__link:link, .navigation__link:visited {
+    display: inline-block;
+    font-size: 3.2rem;
+    font-weight: 300;
+    color: #da4141;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
+    background-size: 220%;
+    transition: all 0.2s; }
+  .navigation__link span {
+    display: inline-block;
+    margin-right: 1.3rem; }
+  .navigation__link:hover, .navigation__link:active {
+    background-position: 100%;
+    color: #1e293b;
+    transform: translateX(1rem); }
+  .navigation__icon {
+    position: relative;
+    margin-top: 3.5rem; }
+    .navigation__icon, .navigation__icon::after, .navigation__icon::before {
+      width: 3rem;
+      height: 2px;
+      background-color: #333;
+      display: inline-block; }
+    .navigation__icon::after, .navigation__icon::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all 0.2s; }
+    .navigation__icon::after {
+      top: 1rem; }
+    .navigation__icon::before {
+      top: -1rem; }
+  .navigation__button:hover .navigation__icon::after {
+    top: 1.2rem; }
+  .navigation__button:hover .navigation__icon::before {
+    top: -1.2rem; }
+  .navigation__checkbox:checked + .navigation__button .navigation__icon {
+    background-color: transparent; }
+  .navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+    top: 0;
+    transform: rotate(135deg); }
+  .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+    top: 0;
+    transform: rotate(-135deg); }
+  .navigation__checkbox:checked ~ .navigation__nav .navigation__list {
+    width: 100%;
+    visibility: visible; }
+
 .section-hero {
   background-color: #1e293b;
   padding: 9.6rem 0 9.6rem 0; }
+  @media (max-width: 56.25em) {
+    .section-hero {
+      padding: 12.8rem 0 9.6rem 0; } }
+
+.container__hero {
+  max-width: 140rem; }
 
 .heading--hero {
   color: #f1f3f5; }
@@ -314,7 +441,7 @@ body {
     transition: transform 0.2s, width 0.2s cubic-bezier(1, 0, 0, 1) 0.4s; }
   .footer__text {
     color: #f1f3f5;
-    font-family: "Nunito", sans-serif;
+    font-family: "Rubik", sans-serif;
     font-size: 1.6rem; }
     .footer__text span {
       color: #da4141; }
@@ -398,7 +525,7 @@ body {
 
 .project__cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
   grid-gap: 6.4rem; }
 
 .card {
@@ -463,7 +590,7 @@ body {
   padding: 1.2rem 1.6rem;
   font-size: 1.6rem;
   border-radius: 2px;
-  font-family: "Nunito", sans-serif;
+  font-family: "Rubik", sans-serif;
   border: none;
   border-bottom: 3px solid transparent;
   background-color: #f1f3f5; }
